@@ -1,13 +1,16 @@
+import { HeroSection } from "@/components/HeroSection";
+import Navbar from "@/components/navbar";
 import { Inter } from "next/font/google";
+import { Courses } from "@/components/Courses";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main className={`${inter.className}`}>
-      <h1 className="font-extrabold text-lg text-black">
-        Interview Preparation
-      </h1>
+      <Navbar />
+      <HeroSection />
+      {/* <Courses /> */}
     </main>
   );
 }
