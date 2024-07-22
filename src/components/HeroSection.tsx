@@ -1,27 +1,59 @@
+"use client";
+import { Badge } from "./ui/badge";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { Button } from "./ui/button";
 
 export const HeroSection = () => {
   return (
-    <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
-      <div className="p-4 relative z-10 w-full text-center">
-        <h1 className="mt-20 md:mt-0 text-3xl md:text-7xl font-bold">
-          Start Your Interview Preparation Journey
-        </h1>
-        <p className="mt-4 font-normal text-base md:text-lg max-w-lg mx-auto">
-          Discover essential resources and practice questions tailored only for
-      frontend developers. Enhance your skills, ace interviews, and
+    <section className="container w-full">
+      <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-32 md:py-32">
+        <div className="text-center space-y-8">
+          <Badge variant="outline" className="text-sm py-2">
+            <span className="mr-2 text-primary">
+              <Badge>New</Badge>
+            </span>
+            <span> Questions added recently </span>
+          </Badge>
+
+          <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
+            <h1>
+              Start
+              <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
+                Your Interview Preparation
+              </span>
+              Now
+            </h1>
+          </div>
+
+          <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
+            {`Discover essential resources and practice questions tailored only for
+      frontend developers.`}
+          </p>
+          <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
+            {`Enhance your skills, ace interviews, and
           stay updated with the latest trends. Your path to frontend mastery
-          starts here!
-        </p>
-        <div className="mt-4">
-          <Link href={"#!"}>
-            <Button variant={"default"} className="">
-              Let&apos;s Start
+          starts here!`}
+          </p>
+
+          <div className="space-y-4 md:space-y-0 md:space-x-4">
+            <Button className="w-5/6 md:w-1/4 font-bold group/arrow">
+              Get Started
+              <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
             </Button>
-          </Link>
+
+            <Button
+              asChild
+              variant="secondary"
+              className="w-5/6 md:w-1/4 font-bold"
+            >
+              <Link href="https://github.com" target="_blank">
+                Github respository
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
