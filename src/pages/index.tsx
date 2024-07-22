@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar";
 import { Inter } from "next/font/google";
 import { HeroSection } from "@/components/HeroSection";
 import { CompaniesList } from "@/components/CompaniesList";
