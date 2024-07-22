@@ -2,6 +2,7 @@ import { FeaturesProps } from "./types";
 import { CompaniesListProps } from "./types";
 import { ReviewProps } from "./types";
 import { FAQProps } from "./types";
+import { RouteProps } from "./types";
 
 export const featureList: FeaturesProps[] = [
   {
@@ -39,6 +40,54 @@ export const featureList: FeaturesProps[] = [
     title: "Resource Library",
     description:
       "A vast library of resources, including articles, tutorials, and reference guides. The library covers essential frontend development topics, best practices, and the latest industry trends. Users can access these resources to supplement their learning and stay updated with the latest developments in the field.",
+  },
+];
+
+export const courseList = [
+  {
+    icon: "",
+    title: "DSA Question",
+    description: "solve DSA problems now",
+  },
+  {
+    icon: "",
+    title: "JavaScript Quiz",
+    description: "solve JavaScript Quiz now",
+  },
+  {
+    icon: "",
+    title: "TypeScript Quiz ",
+    description: "solve TypeScript problems now",
+  },
+  {
+    icon: "",
+    title: "JavaScript Machine Coding",
+    description: "solve JavaScript Machine Coding problems now",
+  },
+  {
+    icon: "",
+    title: "React Machine Coding",
+    description: "solve React Machine Coding problems now",
+  },
+  {
+    icon: "",
+    title: "JS Theory Interview Questions",
+    description: "Practice JS Theory Interview Questions",
+  },
+];
+
+export const routeList: RouteProps[] = [
+  {
+    href: "#testimonials",
+    label: "Testimonials",
+  },
+  {
+    href: "#features",
+    label: "Features",
+  },
+  {
+    href: "#faq",
+    label: "FAQ",
   },
 ];
 

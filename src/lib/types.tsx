@@ -4,6 +4,11 @@ export interface FeaturesProps {
   description: string;
 }
 
+export interface RouteProps {
+  href: string;
+  label: string;
+}
+
 export interface CompaniesListProps {
   icon: string;
   name: string;
