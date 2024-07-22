@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import { Inter } from "next/font/google";
 import { HeroSection } from "@/components/HeroSection";
-import { Sponsors } from "@/components/Sponsors";
+import { CompaniesList } from "@/components/CompaniesList";
 import { Features } from "@/components/Features";
 import { Testimonials } from "@/components/Testimonials";
 import { FAQ } from "@/components/FAQ ";
@@ -15,10 +15,10 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <Features />
-      {/* <Sponsors /> */}
+      <CompaniesList />
       <Testimonials />
       <FAQ />
-      <Footer/>
+      <Footer />
     </main>
   );
 }

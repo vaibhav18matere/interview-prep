@@ -20,7 +20,7 @@ import { reviewList } from "@/lib/data";
 
 export const Testimonials = () => {
   return (
-    <section id="testimonials" className="container py-6 sm:py-16">
+    <section id="testimonials" className="container">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
           Testimonials

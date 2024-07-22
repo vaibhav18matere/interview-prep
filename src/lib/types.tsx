@@ -4,7 +4,7 @@ export interface FeaturesProps {
   description: string;
 }
 
-export interface sponsorsProps {
+export interface CompaniesListProps {
   icon: string;
   name: string;
 }
@@ -15,4 +15,10 @@ export interface ReviewProps {
   userName: string;
   comment: string;
   rating: number;
+}
+
+export interface FAQProps {
+  question: string;
+  answer: string;
+  value: string;
 }
