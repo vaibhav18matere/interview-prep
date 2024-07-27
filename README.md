@@ -16,29 +16,32 @@
 - React Theorey Questions
 - NEXTJS Theorey Questions
 
-## Installation
+## Run Locally
 
-- Install the project with npm / pnpm / yarn / bun or anything of your choice
-- I will recommand using `pnpm`
+Clone the project
 
 ```bash
   git clone https://github.com/vaibhav18matere/interview-prep.git
-  pnpm install
-  cd interview-prep
 ```
-    
-## Getting Started
 
-First, run the development server:
+Go to the project directory
 
 ```bash
-npm run dev
-# or
-pnpm dev
-# or
-yarn dev
-# or
-bun dev
+  cd interview-prep
+```
+
+Install dependencies
+- with npm / pnpm / yarn / bun or anything of your choice
+- I will recommand using `pnpm`
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
 ```
 
 - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
