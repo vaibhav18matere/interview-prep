@@ -1,1 +1,3 @@
-export const HTMLQuiz = [{}, {}];
+import { TheoryProps } from "../types";
+
+export const HTMLQuiz: TheoryProps[] = [];
