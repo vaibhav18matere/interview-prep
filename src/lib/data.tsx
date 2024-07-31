@@ -1,4 +1,4 @@
-import { FeaturesProps } from "./types";
+import { FeaturesProps, TopicsProps } from "./types";
 import { CompaniesListProps } from "./types";
 import { ReviewProps } from "./types";
 import { FAQProps } from "./types";
@@ -240,4 +240,11 @@ export const FAQList: FAQProps[] = [
       "We regularly update our content to ensure it stays relevant and up-to-date with the latest trends and technologies in frontend development. Our team continuously adds new questions, coding challenges, and resources to keep your preparation fresh and comprehensive",
     value: "item-7",
   },
+];
+
+export const topics: TopicsProps[] =  [
+  { title: 'HTML', description: 'Understand the structure and semantics of HTML.', icon: 'html5', href: '/theory/html' },
+  { title: 'CSS', description: 'Learn styling and layout techniques using CSS.', icon: 'css3', href: '/theory/css' },
+  { title: 'JavaScript', description: 'Dive into JavaScript programming and ES6 features.', icon: 'javascript', href: '/theory/javaScript' },
+  { title: 'React', description: 'Explore React concepts, components, and hooks.', icon: 'react', href: '/theory/react' }
 ];
