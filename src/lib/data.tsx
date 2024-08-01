@@ -242,9 +242,33 @@ export const FAQList: FAQProps[] = [
   },
 ];
 
-export const topics: TopicsProps[] =  [
-  { title: 'HTML', description: 'Understand the structure and semantics of HTML.', icon: 'html5', href: '/theory/html' },
-  { title: 'CSS', description: 'Learn styling and layout techniques using CSS.', icon: 'css3', href: '/theory/css' },
-  { title: 'JavaScript', description: 'Dive into JavaScript programming and ES6 features.', icon: 'javascript', href: '/theory/javaScript' },
-  { title: 'React', description: 'Explore React concepts, components, and hooks.', icon: 'react', href: '/theory/react' }
+export const topics: TopicsProps[] = [
+  {
+    id: 1,
+    title: "HTML",
+    description: "Understand the structure and semantics of HTML.",
+    icon: "html5",
+    href: "/theory/html",
+  },
+  {
+    id: 2,
+    title: "CSS",
+    description: "Learn styling and layout techniques using CSS.",
+    icon: "css3",
+    href: "/theory/css",
+  },
+  {
+    id: 3,
+    title: "JavaScript",
+    description: "Dive into JavaScript programming and ES6 features.",
+    icon: "javascript",
+    href: "/theory/javaScript",
+  },
+  {
+    id: 4,
+    title: "React",
+    description: "Explore React concepts, components, and hooks.",
+    icon: "react",
+    href: "/theory/react",
+  },
 ];

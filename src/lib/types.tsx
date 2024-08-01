@@ -39,6 +39,7 @@ export interface AccordionDemoProps {
   heading: string;
 }
 export interface TopicsProps {
+  id: number;
   title: string;
   description: string;
   icon: string;

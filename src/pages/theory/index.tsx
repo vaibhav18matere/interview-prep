@@ -18,10 +18,10 @@ const theory = () => {
           Theory Questions
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {topics.map(({ title, description, icon, href }, index) => {
+          {topics.map(({ id, title, description, icon, href }, index) => {
             const IconComponent = iconMapping[icon];
             return (
-              <Link href={href}>
+              <Link href={href} key={id}>
                 <Card className="h-full border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 bg-muted/50 dark:bg-card transform hover:-translate-y-1 hover:scale-105">
                   <CardHeader className="flex flex-col justify-center items-center">
                     <div className="bg-primary/20 p-4 rounded-full ring-8 ring-primary/10 mb-4 transition-all duration-300 hover:ring-primary/20">
