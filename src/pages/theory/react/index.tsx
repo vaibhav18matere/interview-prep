@@ -1,10 +1,11 @@
 import AccordionDemo from "@/components/Accordion";
 import { ReactJSTheory } from "@/lib/TheoryQueData/reactJSTheoryData";
-import React from "react";
+import useDynamicTitle from "@/hooks/useDynamicTitle";
 
 const index = () => {
+  useDynamicTitle("Theory");
   return (
-    <section className="mx-auto py-15 md:py-18">
+    <section className="mx-auto py-15 md:py-16">
       <AccordionDemo data={ReactJSTheory} heading={"React"}/>
     </section>
   );
