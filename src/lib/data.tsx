@@ -78,6 +78,10 @@ export const courseList = [
 
 export const routeList: RouteProps[] = [
   {
+    href: "/theory",
+    label: "Theory Questions",
+  },
+  {
     href: "#testimonials",
     label: "Testimonials",
   },
