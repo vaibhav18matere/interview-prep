@@ -1,15 +1,18 @@
 import React from "react";
 import AccordionDemo from "@/components/Accordion";
 import { JavaScriptTheory } from "@/lib/TheoryQueData/JsTheoryData";
-import useDynamicTitle from "@/hooks/useDynamicTitle";
+import useDocumentTitle from "@/hooks/useDocumentTitle";
 
-const index = () => {
-  useDynamicTitle("Theory");
+const TheoryJS = () => {
+  const headElement = useDocumentTitle("Interview Prep | Theory");
   return (
+    <>
+    {headElement}
     <section className="mx-auto py-15 md:py-16">
       <AccordionDemo data={JavaScriptTheory}  heading={"JavaScript"}/>
     </section>
+    </>
   );
 };
 
-export default index;
+export default TheoryJS;
