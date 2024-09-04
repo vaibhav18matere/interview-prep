@@ -43,5 +43,6 @@ export interface TopicsProps {
   title: string;
   description: string;
   icon: string;
-  href: string;
+  href_theory: string;
+  href_quiz: string;
 }
