@@ -252,27 +252,34 @@ export const topics: TopicsProps[] = [
     title: "HTML",
     description: "Understand the structure and semantics of HTML.",
     icon: "html5",
-    href: "/theory/html",
+    href_theory: "/theory/html",
+    href_quiz:"/quizes/html"
   },
   {
     id: 2,
     title: "CSS",
     description: "Learn styling and layout techniques using CSS.",
     icon: "css3",
-    href: "/theory/css",
+    href_theory: "/theory/css",
+    href_quiz:"/quizes/css"
+
   },
   {
     id: 3,
     title: "JavaScript",
     description: "Dive into JavaScript programming and ES6 features.",
     icon: "javascript",
-    href: "/theory/javaScript",
+    href_theory: "/theory/javaScript",
+    href_quiz:"/quizes/javaScript"
+
   },
   {
     id: 4,
     title: "React",
     description: "Explore React concepts, components, and hooks.",
     icon: "react",
-    href: "/theory/react",
+    href_theory: "/theory/react",
+    href_quiz:"/quizes/react"
+
   },
 ];
