@@ -62,6 +62,13 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      boxShadow: {
+        headerShadow: "0 20px 40px hsl(var(--background))",
+        cardcustom: "10px 10px 30px #070707",
+      },
+      heightHero: {
+        height: "calc(100vh - .5rem)",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
@@ -79,12 +86,17 @@ module.exports = {
           from: { height: "var(--radix-collapsible-content-height)" },
           to: { height: 0 },
         },
+        blink: {
+          "0%, 100%": { opacity: 1 },
+          "50%": { opacity: 0.75 },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "collapsible-down": "collapsible-down 0.2s ease-in-out",
         "collapsible-up": "collapsible-up 0.2s ease-in-out",
+        blink: "blink 2s ease-in-out infinite",
       },
     },
   },
